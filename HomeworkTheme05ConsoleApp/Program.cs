@@ -8,6 +8,11 @@ namespace HomeworkTheme05ConsoleApp
 {
     class Program
     {
+        static string SplitStringIntoWords(string inputString)
+        {
+            
+        }
+
         static void Main(string[] args)
         {
 
