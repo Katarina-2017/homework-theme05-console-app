@@ -14,15 +14,25 @@ namespace HomeworkTheme05ConsoleApp
            return resultArray;
         }
 
+        static void PrintWords(string[] inputArray)
+        {
+            Console.WriteLine($"\nПолучившиеся слова:");
 
+            foreach (var word in inputArray)
+            {
+               Console.WriteLine(word);
+            }
+        }
 
         static void Main(string[] args)
         {
             Console.WriteLine("Задание 1. Разделение строки на слова");
-            Console.WriteLine("Введите длинное предложение:");
+            Console.WriteLine("\nВведите длинное предложение:");
 
             string userString = Console.ReadLine();
-            SplitStringIntoWords(userString);
+            PrintWords(SplitStringIntoWords(userString));
+
+            Console.ReadKey();
         }
     }
 }
