@@ -30,7 +30,9 @@ namespace HomeworkTheme05ConsoleApp
             Console.WriteLine("\nВведите длинное предложение:");
 
             string userString = Console.ReadLine();
-            PrintWords(SplitStringIntoWords(userString));
+            string[] resultString=SplitStringIntoWords(userString);
+
+            PrintWords(resultString);
 
             Console.ReadKey();
         }
