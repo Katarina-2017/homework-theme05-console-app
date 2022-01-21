@@ -8,10 +8,13 @@ namespace HomeworkTheme05ConsoleApp
 {
     class Program
     {
-        static string SplitStringIntoWords(string inputString)
+        static string[] SplitStringIntoWords(string inputString)
         {
-            
+           string[] resultArray = inputString.Split(' ');
+           return resultArray;
         }
+
+
 
         static void Main(string[] args)
         {
@@ -19,7 +22,7 @@ namespace HomeworkTheme05ConsoleApp
             Console.WriteLine("Введите длинное предложение:");
 
             string userString = Console.ReadLine();
-
+            SplitStringIntoWords(userString);
         }
     }
 }
