@@ -24,6 +24,18 @@ namespace HomeworkTheme05ConsoleApp
             }
         }
 
+        static string ReversWords(string inputPhrase)
+        {
+            string[] resultArray=SplitStringIntoWords(inputPhrase);
+            string resultString="";
+            for (int i = resultArray.Length-1; i >= 0; i--)
+            {
+                resultString += resultArray[i] + " ";
+            }
+
+            return resultString;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Задание 1. Разделение строки на слова");
@@ -33,6 +45,12 @@ namespace HomeworkTheme05ConsoleApp
             string[] resultString=SplitStringIntoWords(userString);
 
             PrintWords(resultString);
+
+            Console.WriteLine("Задание 2. Перестановка слов в предложении");
+            Console.WriteLine("\nВведите длинное предложение:");
+            string userString2 = Console.ReadLine();
+
+            Console.WriteLine(ReversWords(userString2));
 
             Console.ReadKey();
         }
