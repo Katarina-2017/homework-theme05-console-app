@@ -15,6 +15,10 @@ namespace HomeworkTheme05ConsoleApp
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Задание 1. Разделение строки на слова");
+            Console.WriteLine("Введите длинное предложение:");
+
+            string userString = Console.ReadLine();
 
         }
     }
